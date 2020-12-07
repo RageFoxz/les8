@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>les8</title>
+</head>
+<body>
+    <script>
+    // 1 - getValues - принимает объект и возвращает массив его значений.
+    
+         function getValues (obj) {
+            var values = [];
+            for (var key in obj) {
+                values.push(obj[key])
+            }
+            return values
+        }
+
+    // 2 - getKeys - принимает объект и возвращает массив его ключей.
+
+        function getKeys (obj) {
+            var keys = [];
+            for (var key in obj) {
+                keys.push(key)
+            }
+            return keys
+        }
+
+    // 3 - getEntries - принимает объект и возвращает массив, который состоит из массивов, где 0 элемент ключ, а 1 - значение.
+
+        function getEntries (obj) {
+            var entries = [];
+            for (var key in obj) {
+                entries.push([key, obj[key]])
+            }
+            return entries
+        }
+    </script>
+</body>
+</html>
